@@ -44,7 +44,7 @@ function ServiceSection() {
             ever since the 1500s,
           </Typography>
         </Box>
-        <Box sx={{width:'85%',pl:{xs:'5px',lg:'35px'},mt:{xs:'90px',lg:'130px'}}}>
+        <Box sx={{width:'100%',pl:{xs:'5px',lg:'35px'},mt:{xs:'90px',lg:'130px'}}}>
           <ServiceCard/>
           
         </Box>
