@@ -20,9 +20,7 @@ const navItems = [
   { name: "Home", path: "/" },
   { name: "About us", path: "/about" },
   { name: "Services", path: "/services" },
-
   { name: "Contact us", path: "/contact" },
-  { name: "Services", path: "/services" },
   { name: "News", path: "/news" },
 ];
 
@@ -60,7 +58,7 @@ function DrawerAppBar(props) {
       <CssBaseline />
       <AppBar component="nav" sx={{ bgcolor: "#DF7C14" }}>
         <Toolbar>
-           <Typography
+          <Typography
             variant="h6"
             component="div"
             fontWeight="bold"
@@ -69,7 +67,7 @@ function DrawerAppBar(props) {
             LOGO
           </Typography>
           <IconButton
-             color="inherit"
+            color="inherit"
             aria-label="open drawer"
             onClick={handleDrawerToggle}
             sx={{
@@ -79,7 +77,7 @@ function DrawerAppBar(props) {
           >
             <MenuIcon />
           </IconButton>
-         
+
           <Box sx={{ display: { xs: "none", md: "block" } }}>
             {navItems.map((item, i) => (
               <Box
@@ -122,13 +120,11 @@ function DrawerAppBar(props) {
           container={container}
           variant="temporary"
           open={mobileOpen}
-         
           onClose={handleDrawerToggle}
           ModalProps={{
             keepMounted: true, // Better open performance on mobile.
           }}
-
-           sx={{
+          sx={{
             display: { xs: "block", sm: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
@@ -139,7 +135,6 @@ function DrawerAppBar(props) {
           {drawer}
         </Drawer>
       </nav>
-  
     </Box>
   );
 }
@@ -149,7 +144,3 @@ DrawerAppBar.propTypes = {
 };
 
 export default DrawerAppBar;
-
-
-
-

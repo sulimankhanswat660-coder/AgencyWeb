@@ -7,6 +7,7 @@ import Contact from '../../Component/Reuseable/Contact'
 import AboutCompany from './Component/AboutCompany'
 import OurMission from './Component/OurMission'
 import OurTeam from './Component/OurTeam'
+import Feature from './Component/Feature'
 
 function About() {
     
@@ -17,6 +18,7 @@ function About() {
       <AboutCompany/>
       <OurMission/>
       <OurTeam/>
+      <Feature/>
       <Contact/>
       <Footer/>
 
