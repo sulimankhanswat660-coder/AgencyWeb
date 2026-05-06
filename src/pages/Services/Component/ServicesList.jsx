@@ -46,10 +46,10 @@ function ServicesList() {
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.Lorem Ipsum is simply dummy .
            </Typography>
-           <Typography sx={{ fontFamily: "poppins", fontSize: "14px", fontWeight: "400" }}><CheckCircleIcon sx={{ fontSize: 1 }}  color="success"/> Lorem Ipsum is simply</Typography>
-           <Typography sx={{ fontFamily: "poppins", fontSize: "14px", fontWeight: "400" }}>Lorem Ipsum is simply</Typography>
-           <Typography sx={{ fontFamily: "poppins", fontSize: "14px", fontWeight: "400" }}>Lorem Ipsum is simply</Typography>
-           <Typography sx={{ fontFamily: "poppins", fontSize: "14px", fontWeight: "400" }}>Lorem Ipsum is simply</Typography>
+           <Typography sx={{ fontFamily: "poppins", fontSize: "15px", fontWeight: "400",}}><CheckCircleIcon sx={{ fontSize: 15 }}  color="success"/>  Lorem Ipsum is simply</Typography>
+           <Typography sx={{ fontFamily: "poppins", fontSize: "15px", fontWeight: "400" }}> <CheckCircleIcon sx={{ fontSize: 15 }}  color="success"/>  Lorem Ipsum is simply</Typography>
+           <Typography sx={{ fontFamily: "poppins", fontSize: "15px", fontWeight: "400" }}> <CheckCircleIcon sx={{ fontSize: 15 }}  color="success"/>  Lorem Ipsum is simply</Typography>
+           <Typography sx={{ fontFamily: "poppins", fontSize: "15px", fontWeight: "400" }}> <CheckCircleIcon sx={{ fontSize: 15 }}  color="success"/>  Lorem Ipsum is simply</Typography>
         </Stack>
       </Box>
     </Box>
