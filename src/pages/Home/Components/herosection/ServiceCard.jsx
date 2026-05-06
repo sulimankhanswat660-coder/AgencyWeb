@@ -20,7 +20,7 @@ const services = [
 export default function ServiceCard() {
   return (
     <Box sx={{ maxHeight: "max-content" }}>
-      <Grid container spacing={10} justifyContent="center">
+      <Grid container spacing={12} justifyContent="center">
         {services.map((item, index) => (
           <Grid
             item
