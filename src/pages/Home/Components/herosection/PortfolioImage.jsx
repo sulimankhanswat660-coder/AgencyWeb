@@ -9,7 +9,7 @@ import card6 from "../../../../../public/Card6.jpg";
 
 import { Box } from "@mui/material";
 
-function CardImage() {
+function PortfolioImage() {
   return (
     <>
       <Box
@@ -72,4 +72,4 @@ function CardImage() {
   );
 }
 
-export default CardImage;
+export default PortfolioImage;

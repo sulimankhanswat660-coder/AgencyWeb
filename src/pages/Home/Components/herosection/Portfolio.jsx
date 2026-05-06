@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
-import CardImage from "./CardImage";
+import CardImage from "./PortfolioImage";
 import React from "react";
+import PortfolioImage from "./PortfolioImage";
 
 function Portfolio() {
   return (
@@ -50,7 +51,7 @@ function Portfolio() {
             justifyContent: {xs:'center',md:'left'},
           }}
         >
-          <CardImage />
+          <PortfolioImage />
         </Box>
       </Box>
     </Box>
