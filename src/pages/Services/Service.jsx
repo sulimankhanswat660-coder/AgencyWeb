@@ -5,6 +5,7 @@ import Contact from '../../Component/Reuseable/Contact'
 import ServiceHero from './Component/ServiceHero'
 import ServicesList from './Component/ServicesList'
 import ServiceDetails from './Component/ServiceDetails'
+import Process from './Component/Process'
 function Service() {
   return (
     <div>
@@ -12,6 +13,7 @@ function Service() {
         <ServiceHero/>
         <ServicesList/>
         <ServiceDetails/>
+        <Process/>
         <Contact/>
         <Footer/>
     </div>

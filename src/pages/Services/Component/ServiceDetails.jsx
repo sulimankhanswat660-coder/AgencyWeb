@@ -1,6 +1,6 @@
+import React from "react";
 import { Box, Button, Typography, Stack, Grid } from "@mui/material";
 import image from "../../../../public/ServiceDetail.jpg";
-import React from "react";
 
 function ServiceDetails() {
   return (
@@ -78,7 +78,11 @@ function ServiceDetails() {
       <Box
         component="img"
         src={image}
-        sx={{ width: { xs: "100%", md: "40%" }, objectFit: "cover",mt:'20px' }}
+        sx={{
+          width: { xs: "100%", md: "40%" },
+          objectFit: "cover",
+          mt: "20px",
+        }}
       />
     </Box>
   );
