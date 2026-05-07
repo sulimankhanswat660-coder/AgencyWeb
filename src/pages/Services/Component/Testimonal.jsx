@@ -1,5 +1,4 @@
 import React from "react";
-import Avtar from "../../../../public/Avtar2.png";
 import {
   Box,
   Container,
@@ -12,6 +11,7 @@ import {
   Card,
 } from "@mui/material";
 import CardHeader from "@mui/material/CardHeader";
+
 
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
@@ -256,6 +256,7 @@ export default function TestimonialSection() {
         width: "100%",
         height: "max-content",
         my: "80px",
+        py:'50px',
         bgcolor: "#DDDDDD",
       }}
     >
@@ -286,18 +287,82 @@ export default function TestimonialSection() {
           industry.Lorem Ipsum is simply dummy .{" "}
         </Typography>
       </Stack>
-      <Box sx={{ width: { md: "90%" }, mx: "auto" }}>
-        <Card sx={{ width: "28%" }}>
+      <Box sx={{ width: { md: "90%" }, mx: "auto",pt:'50px', display:'flex',flexDirection:{xs:'column',md:'row'},gap:'10px'}}>
+        <Card sx={{ width: {xs:'80%',md:"28%"},ml:{xs:'20px'} }}>
           <CardHeader
             avatar={
-              <Avatar sx={{ bgcolor: 'red[500] '}} aria-label="recipe">
-                R
+              <Avatar src="../../../../public/suliman.jpeg" sx={{ width: 56, height: 56,bgcolor: 'red[500] '}} aria-label="recipe">
+                
               </Avatar>
             }
             action={
-              <IconButton aria-label="settings">
+              // <IconButton aria-label="settings">
+              //   4.5
+              //   <Rating
+              //         value={1}
+              //         readOnly
+              //         max={1}
+              //         size="small"
+              //       />
+              // </IconButton>
+              <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 0.5,
+                    }}
+                  >
+                    <Typography fontWeight={500}>
+                      4.5
+                    </Typography>
+
+                    <Rating
+                      value={1}
+                      readOnly
+                      max={1}
+                      size="small"
+                    />
+                  </Box>
+            }
+            title="Shrimp and Chorizo Paella"
+            subheader="September 14, 2016"
+          />
+        </Card>
+         <Card sx={{ width: "28%" }}>
+          <CardHeader
+            avatar={
+              <Avatar src="../../../../public/salman.png" sx={{ width: 56, height: 56,bgcolor: 'red[500] '}} aria-label="recipe">
                 
-              </IconButton>
+              </Avatar>
+            }
+            action={
+              // <IconButton aria-label="settings">
+              //   4.5
+              //   <Rating
+              //         value={1}
+              //         readOnly
+              //         max={1}
+              //         size="small"
+              //       />
+              // </IconButton>
+              <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 0.5,
+                    }}
+                  >
+                    <Typography fontWeight={500}>
+                      4.5
+                    </Typography>
+
+                    <Rating
+                      value={1}
+                      readOnly
+                      max={1}
+                      size="small"
+                    />
+                  </Box>
             }
             title="Shrimp and Chorizo Paella"
             subheader="September 14, 2016"
