@@ -15,7 +15,7 @@ function Feature() {
                 <Box
                 component='img'
                 src={logo1}
-                sx={{width:'105px',height:'105px'}}
+                sx={{width:'125px',height:'115px'}}
                 />
                 <Box
                 component='img'

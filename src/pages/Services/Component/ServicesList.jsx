@@ -5,12 +5,13 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 function ServicesList() {
   return (
     <Box sx={{ width: "100%", height: "max-content" ,}}>
-      <Box sx={{ width: "85%", mx: "auto", display: "flex",flexDirection:{xs:'column-reverse',sm:'row'}, gap: 6 }}>
+      <Box sx={{ width: "85%", mx: "auto", display: "flex",flexDirection:{xs:'column-reverse',md:'row'}, gap: 6 }}>
         <Box
           sx={{
             position: "relative",
             width: "100%",
             maxWidth: 600,
+            height:{xs:'50%',md:'100%'},
             borderRadius: "12px",
             overflow: "hidden",
             cursor: "pointer",
