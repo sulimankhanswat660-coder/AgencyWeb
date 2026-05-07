@@ -9,7 +9,9 @@ import {
   Rating,
   IconButton,
   Stack,
+  Card,
 } from "@mui/material";
+import CardHeader from "@mui/material/CardHeader";
 
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
@@ -257,11 +259,11 @@ export default function TestimonialSection() {
         bgcolor: "#DDDDDD",
       }}
     >
-      <Stack spacing={3} sx={{ width:{xs:'90%',md: "40%"}, mx: "auto" }}>
+      <Stack spacing={3} sx={{ width: { xs: "90%", md: "40%" }, mx: "auto" }}>
         <Typography
           sx={{
             color: "#0B132A",
-            fontSize: {xs:'23px',md:"35px"},
+            fontSize: { xs: "23px", md: "35px" },
             fontWeight: "600",
             fontFamily: "poppins",
             lineHeight: "50px",
@@ -273,7 +275,7 @@ export default function TestimonialSection() {
         <Typography
           sx={{
             color: "#525252",
-            fontSize:  {xs:'12px',md:"14px"},
+            fontSize: { xs: "12px", md: "14px" },
             fontWeight: "400",
             fontFamily: "poppins",
             lineHeight: "188%",
@@ -284,6 +286,24 @@ export default function TestimonialSection() {
           industry.Lorem Ipsum is simply dummy .{" "}
         </Typography>
       </Stack>
+      <Box sx={{ width: { md: "90%" }, mx: "auto" }}>
+        <Card sx={{ width: "28%" }}>
+          <CardHeader
+            avatar={
+              <Avatar sx={{ bgcolor: 'red[500] '}} aria-label="recipe">
+                R
+              </Avatar>
+            }
+            action={
+              <IconButton aria-label="settings">
+                
+              </IconButton>
+            }
+            title="Shrimp and Chorizo Paella"
+            subheader="September 14, 2016"
+          />
+        </Card>
+      </Box>
     </Box>
   );
 }
