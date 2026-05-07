@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Button, Typography, Stack, Grid } from "@mui/material";
-import image from "../../../../public/Process.jpg";
+import image from "../../../../public/Portfolio.jpg";
 
-function Process() {
+function Portfolio() {
   return (
     <Box
       sx={{
@@ -12,24 +12,13 @@ function Process() {
         pl: { xs: "0px", md: "70px" },
         pt: { xs: "20px", md: "80px" },
         display: "flex",
-        flexDirection: { xs: "column", md: "row" },
+        flexDirection: { xs: "column-reverse", md: "row" },
         gap: 10,
       }}
     >
-          <Box
-        component="img"
-        src={image}
-        sx={{
-          width: { xs: "100%", md: "40%" },
-          height:{xs:'250px',sm:'400px',md:'450px'},
-          objectFit: "cover",
-          mt: "20px",
-        }}
-      />
       <Stack
         spacing={3}
         sx={{
-          mt:'20px',
           alignSelf: "center",
           width: { xs: "80%", md: "40%" },
           mb: "20px",
@@ -86,9 +75,18 @@ function Process() {
           Get more
         </Button>
       </Stack>
-    
+      <Box
+        component="img"
+        src={image}
+         sx={{
+          width: { xs: "100%", md: "40%" },
+          height:{xs:'250px',sm:'400px',md:'450px'},
+          objectFit: "cover",
+          mt: "20px",
+        }}
+      />
     </Box>
   );
 }
 
-export default Process;
+export default Portfolio;

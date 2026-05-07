@@ -6,6 +6,7 @@ import ServiceHero from './Component/ServiceHero'
 import ServicesList from './Component/ServicesList'
 import ServiceDetails from './Component/ServiceDetails'
 import Process from './Component/Process'
+import Portfolio from './Component/Portfolio'
 function Service() {
   return (
     <div>
@@ -14,6 +15,7 @@ function Service() {
         <ServicesList/>
         <ServiceDetails/>
         <Process/>
+        <Portfolio/>
         <Contact/>
         <Footer/>
     </div>
