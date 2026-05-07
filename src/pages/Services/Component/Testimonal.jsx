@@ -307,7 +307,7 @@ export default function TestimonialSection() {
           <CardHeader
             avatar={
               <Avatar
-                src="../../../../public/salman.png"
+                src="../../../../public/Suliman.png"
                 sx={{ width: 56, height: 56, bgcolor: "red[500] " }}
                 aria-label="recipe"
               ></Avatar>
@@ -348,7 +348,7 @@ export default function TestimonialSection() {
           <CardHeader
             avatar={
               <Avatar
-                src="../../../../public/swat.jpeg"
+                // src="../../../../public/swat.jpeg"
                 sx={{ width: 56, height: 56, bgcolor: "red[500] " }}
                 aria-label="recipe"
               ></Avatar>
@@ -387,7 +387,7 @@ export default function TestimonialSection() {
           <CardHeader
             avatar={
               <Avatar
-                src="../../../../public/swat.jpeg"
+                // src="../../../../public/swat.jpeg"
                 sx={{ width: 56, height: 56, bgcolor: "red[500] " }}
                 aria-label="recipe"
               ></Avatar>
