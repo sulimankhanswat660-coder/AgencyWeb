@@ -291,7 +291,7 @@ export default function TestimonialSection() {
         <Card sx={{ width: {xs:'80%',md:"28%"},ml:{xs:'20px'} }}>
           <CardHeader
             avatar={
-              <Avatar src="../../../../public/suliman.jpeg" sx={{ width: 56, height: 56,bgcolor: 'red[500] '}} aria-label="recipe">
+              <Avatar src="../../../../public/Suliman.jpeg" sx={{ width: 56, height: 56,bgcolor: 'red[500] '}} aria-label="recipe">
                 
               </Avatar>
             }
