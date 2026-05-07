@@ -313,15 +313,6 @@ export default function TestimonialSection() {
               ></Avatar>
             }
             action={
-              // <IconButton aria-label="settings">
-              //   4.5
-              //   <Rating
-              //         value={1}
-              //         readOnly
-              //         max={1}
-              //         size="small"
-              //       />
-              // </IconButton>
               <Box
                 sx={{
                   display: "flex",
@@ -402,15 +393,6 @@ export default function TestimonialSection() {
               ></Avatar>
             }
             action={
-              // <IconButton aria-label="settings">
-              //   4.5
-              //   <Rating
-              //         value={1}
-              //         readOnly
-              //         max={1}
-              //         size="small"
-              //       />
-              // </IconButton>
               <Box
                 sx={{
                   display: "flex",
