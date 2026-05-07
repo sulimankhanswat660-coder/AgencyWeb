@@ -21,7 +21,7 @@ function Process() {
         src={image}
         sx={{
           width: { xs: "100%", md: "40%" },
-          height:{xs:'250px',sm:'400px',md:'450px'},
+          height:{xs:'300px',sm:'450px'},
           objectFit: "cover",
           mt: "20px",
         }}
