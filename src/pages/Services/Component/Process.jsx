@@ -8,7 +8,7 @@ function Process() {
       sx={{
         width: "100%",
         height: "max-content",
-        mt: "70px",
+        mt: "50px",
         pl: { xs: "0px", md: "70px" },
         pt: { xs: "20px", md: "80px" },
         display: "flex",
@@ -82,7 +82,7 @@ function Process() {
             textTransform: "none",
           }}
         >
-          Get in touch
+          Get more
         </Button>
       </Stack>
     
