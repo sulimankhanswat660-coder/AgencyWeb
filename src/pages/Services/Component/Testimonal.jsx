@@ -11,7 +11,7 @@ import {
   Card,
 } from "@mui/material";
 import CardHeader from "@mui/material/CardHeader";
-
+import CardContent from "@mui/material/CardContent";
 
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
@@ -256,7 +256,7 @@ export default function TestimonialSection() {
         width: "100%",
         height: "max-content",
         my: "80px",
-        py:'50px',
+        py: "50px",
         bgcolor: "#DDDDDD",
       }}
     >
@@ -287,13 +287,30 @@ export default function TestimonialSection() {
           industry.Lorem Ipsum is simply dummy .{" "}
         </Typography>
       </Stack>
-      <Box sx={{ width: { md: "90%" }, mx: "auto",pt:'50px', display:'flex',flexDirection:{xs:'column',md:'row'},gap:'10px'}}>
-        <Card sx={{ width: {xs:'80%',md:"28%"},ml:{xs:'20px'} }}>
+      <Box
+        sx={{
+          width: { md: "90%" },
+          mx: "auto",
+          pt: "50px",
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" },
+          gap: "10px",
+        }}
+      >
+        <Card
+          sx={{
+            width: { xs: "90%", md: "28%" },
+            ml: { xs: "20px" },
+            borderRadius: "10px",
+          }}
+        >
           <CardHeader
             avatar={
-              <Avatar src="../../../../public/swat.jpeg" sx={{ width: 56, height: 56,bgcolor: 'red[500] '}} aria-label="recipe">
-                
-              </Avatar>
+              <Avatar
+                src="../../../../public/salman.png"
+                sx={{ width: 56, height: 56, bgcolor: "red[500] " }}
+                aria-label="recipe"
+              ></Avatar>
             }
             action={
               // <IconButton aria-label="settings">
@@ -306,34 +323,83 @@ export default function TestimonialSection() {
               //       />
               // </IconButton>
               <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: 0.5,
-                    }}
-                  >
-                    <Typography fontWeight={500}>
-                      4.5
-                    </Typography>
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 0.5,
+                }}
+              >
+                <Typography fontWeight={500}>4.5</Typography>
 
-                    <Rating
-                      value={1}
-                      readOnly
-                      max={1}
-                      size="small"
-                    />
-                  </Box>
+                <Rating value={1} readOnly max={1} size="small" />
+              </Box>
             }
             title="Shrimp and Chorizo Paella"
             subheader="September 14, 2016"
           />
+          <CardContent>
+            <Typography
+              sx={{ fontFamily: "poppins", fontSize: "14px", color: "#525252" }}
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s,
+            </Typography>
+          </CardContent>
         </Card>
-         <Card sx={{ width: "28%" }}>
+        <Card
+          sx={{
+            width: { xs: "90%", md: "28%" },
+            ml: { xs: "20px" },
+            borderRadius: "10px",
+          }}
+        >
           <CardHeader
             avatar={
-              <Avatar src="../../../../public/salman.png" sx={{ width: 56, height: 56,bgcolor: 'red[500] '}} aria-label="recipe">
-                
-              </Avatar>
+              <Avatar
+                src="../../../../public/swat.jpeg"
+                sx={{ width: 56, height: 56, bgcolor: "red[500] " }}
+                aria-label="recipe"
+              ></Avatar>
+            }
+            action={
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 0.5,
+                }}
+              >
+                <Typography fontWeight={500}>4.5</Typography>
+
+                <Rating value={1} readOnly max={1} size="small" />
+              </Box>
+            }
+            title="Muhammad Suliman"
+            subheader="September 14, 2016"
+          />
+          <CardContent>
+            <Typography
+              sx={{ fontFamily: "poppins", fontSize: "14px", color: "#525252" }}
+            >
+              Lorem Ipsum is simply dummy text of the printing and{" "}
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card
+          sx={{
+            width: { xs: "90%", md: "28%" },
+            ml: { xs: "20px" },
+            borderRadius: "10px",
+          }}
+        >
+          <CardHeader
+            avatar={
+              <Avatar
+                src="../../../../public/swat.jpeg"
+                sx={{ width: 56, height: 56, bgcolor: "red[500] " }}
+                aria-label="recipe"
+              ></Avatar>
             }
             action={
               // <IconButton aria-label="settings">
@@ -346,27 +412,28 @@ export default function TestimonialSection() {
               //       />
               // </IconButton>
               <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: 0.5,
-                    }}
-                  >
-                    <Typography fontWeight={500}>
-                      4.5
-                    </Typography>
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 0.5,
+                }}
+              >
+                <Typography fontWeight={500}>4.5</Typography>
 
-                    <Rating
-                      value={1}
-                      readOnly
-                      max={1}
-                      size="small"
-                    />
-                  </Box>
+                <Rating value={1} readOnly max={1} size="small" />
+              </Box>
             }
-            title="Shrimp and Chorizo Paella"
+            title="Muhammad Suliman"
             subheader="September 14, 2016"
           />
+          <CardContent>
+            <Typography
+              sx={{ fontFamily: "poppins", fontSize: "14px", color: "#525252" }}
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </Typography>
+          </CardContent>
         </Card>
       </Box>
     </Box>
