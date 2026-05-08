@@ -87,7 +87,7 @@ function Footer() {
         }}
       >
         <Typography variant="body2" >
-          Copyright ® 2021 Company All rights Rcerved
+          Copyright ® 2026 Company All rights Rcerved
         </Typography>
       </Box>
     </Box>
