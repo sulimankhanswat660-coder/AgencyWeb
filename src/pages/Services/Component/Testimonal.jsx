@@ -14,6 +14,7 @@ import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
 import image1 from "../../../../public/swat.jpeg";
 import image2 from "../../../../public/Suliman.png";
+import image3 from "../../../../public/shakir.jpeg";
 
 
 export default function Testimonial() {
@@ -185,6 +186,7 @@ export default function Testimonial() {
           </CardContent>
         </Card>
       </Box>
+
     </Box>
   );
 }
