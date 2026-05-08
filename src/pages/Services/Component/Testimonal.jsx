@@ -16,7 +16,7 @@ import image1 from "../../../../public/swat.jpeg";
 import image2 from "../../../../public/Suliman.png";
 
 
-export default function TestimonialSection() {
+export default function Testimonial() {
   return (
     <Box
       sx={{
@@ -115,9 +115,7 @@ export default function TestimonialSection() {
           }}
         >
           <CardHeader
-            avatar={
-             <Avatar  src={image1} sx={{ width: 56, height: 56,}}/>
-            }
+            avatar={<Avatar src={image1} sx={{ width: 56, height: 56 }} />}
             action={
               <Box
                 sx={{
@@ -157,7 +155,7 @@ export default function TestimonialSection() {
               src={image2}
                 sx={{ width: 56, height: 56, bgcolor: "red[500] " }}
                 aria-label="recipe"
-              ></Avatar>
+              />
             }
             action={
               <Box
