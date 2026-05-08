@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
-
+import image1 from "../../../../public/swat.jpeg"
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
@@ -347,11 +347,7 @@ export default function TestimonialSection() {
         >
           <CardHeader
             avatar={
-              <Avatar
-                // src="../../../../public/swat.jpeg"
-                sx={{ width: 56, height: 56, bgcolor: "red[500] " }}
-                aria-label="recipe"
-              ></Avatar>
+             <Avatar  src={image1} sx={{ width: 56, height: 56,}}/>
             }
             action={
               <Box
