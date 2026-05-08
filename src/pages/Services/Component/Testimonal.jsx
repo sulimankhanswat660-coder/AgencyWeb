@@ -152,7 +152,7 @@ export default function Testimonial() {
           <CardHeader
             avatar={
               <Avatar
-              src={image2}
+              src={image3}
                 sx={{ width: 56, height: 56, bgcolor: "red[500] " }}
                 aria-label="recipe"
               />
@@ -172,7 +172,7 @@ export default function Testimonial() {
                 <Rating value={1} readOnly max={1} size="small" />
               </Box>
             }
-            title="Muhammad Suliman"
+            title="Shakir Ullah"
             subheader="September 14, 2016"
           />
           <CardContent>
