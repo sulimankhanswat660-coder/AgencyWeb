@@ -15,8 +15,6 @@ import CardContent from "@mui/material/CardContent";
 import image1 from "../../../../public/swat.jpeg";
 import image2 from "../../../../public/Suliman.png";
 
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 export default function TestimonialSection() {
   return (
