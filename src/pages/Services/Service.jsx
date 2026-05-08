@@ -7,7 +7,7 @@ import ServicesList from "./Component/ServicesList";
 import ServiceDetails from "./Component/ServiceDetails";
 import Process from "./Component/Process";
 import Portfolio from "./Component/Portfolio";
-import TestimonialSection from "./Component/Testimonal";
+import Testimonial from "./Component/Testimonal";
 function Service() {
   return (
     <div>
@@ -17,7 +17,7 @@ function Service() {
       <ServiceDetails />
       <Process />
       <Portfolio />
-      <TestimonialSection />
+      <Testimonial />
       <Contact />
       <Footer />
     </div>

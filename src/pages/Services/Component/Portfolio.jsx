@@ -80,7 +80,7 @@ function Portfolio() {
         src={image}
          sx={{
           width: { xs: "100%", md: "40%" },
-          height:{xs:'250px',sm:'400px',md:'450px'},
+          height:{xs:'400px',sm:'600px',md:'460px'},
           objectFit: "cover",
           mt: "20px",
         }}
