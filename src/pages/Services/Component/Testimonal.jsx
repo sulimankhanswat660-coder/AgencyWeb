@@ -14,6 +14,8 @@ import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import image1 from '../../../../public/swat.jpeg'
+import image2 from '../../../../public/shakir.jpeg'
+import image3 from '../../../../public/Suliman.png'
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 const cardData = [
   {
