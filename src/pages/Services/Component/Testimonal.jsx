@@ -22,14 +22,6 @@ const cardData = [
     name: "Viezh Robert",
     data: Date.now(),
     rating: "4.5",
-    avatar: "../../../../public/swat.jpeg",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-  },
-  {
-    name: "Viezh Robert",
-    data: Date.now(),
-    rating: "4.5",
     avatar: image1,
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
@@ -38,7 +30,15 @@ const cardData = [
     name: "Viezh Robert",
     data: Date.now(),
     rating: "4.5",
-    avatar: "../../../../public/Suliman.png",
+    avatar: image2,
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+  },
+  {
+    name: "Viezh Robert",
+    data: Date.now(),
+    rating: "4.5",
+    avatar: image3,
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
   },
