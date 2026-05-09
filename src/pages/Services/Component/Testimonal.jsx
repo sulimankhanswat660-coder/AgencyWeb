@@ -12,18 +12,41 @@ import {
 } from "@mui/material";
 import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
-import image1 from "../../../../public/swat.jpeg";
-import image2 from "../../../../public/Suliman.png";
-import image3 from "../../../../public/shakir.jpeg";
-
-
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+const cardData = [
+  {
+    name: "Viezh Robert",
+    data: Date.now(),
+    rating: "4.5",
+    avatar: "../../../../public/swat.jpeg",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+  },
+  {
+    name: "Viezh Robert",
+    data: Date.now(),
+    rating: "4.5",
+    avatar: "../../../../public/shakir.jpeg",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+  },
+  {
+    name: "Viezh Robert",
+    data: Date.now(),
+    rating: "4.5",
+    avatar: "../../../../public/Suliman.png",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+  },
+];
 export default function Testimonial() {
   return (
     <Box
       sx={{
         width: "100%",
         height: "max-content",
-        my: "80px",
+        my: "70px",
         py: "50px",
         bgcolor: "#DDDDDD",
       }}
@@ -57,134 +80,131 @@ export default function Testimonial() {
       </Stack>
       <Box
         sx={{
-          width: { md: "90%" },
-          mx: "auto",
-          pt: "50px",
+          width: "90%",
+          margin: "auto",
+          marginBlock: "50px",
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
-          gap:{ xs:"15px",md:'10px'},
+          gap: { xs: "15px", md: "10px" },
         }}
       >
-        <Card
-          sx={{
-            width: { xs: "90%", md: "28%" },
-            ml: { xs: "20px" },
-            borderRadius: "10px",
-          }}
-        >
-          <CardHeader
-            avatar={
-              <Avatar
-                src={image2}
-                sx={{ width: 56, height: 56, bgcolor: "red[500] " }}
-                aria-label="recipe"
+        {cardData.map((item, i) => {
+          return (
+            <Card
+              key={i}
+              sx={{
+                borderRadius: "10px",
+              }}
+            >
+              <CardHeader
+                avatar={
+                  <Avatar
+                    src={item.avatar}
+                    sx={{ width: 56, height: 56, bgcolor: "red[500] " }}
+                    aria-label="recipe"
+                  />
+                }
+                action={
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 0.5,
+                      mt: "16px",
+                      mr: { xs: "2px", sm: "10px" },
+                    }}
+                  >
+                    <Typography fontWeight={500}>{item.rating}</Typography>
+
+                    <Rating value={1} readOnly max={1} size="small" />
+                  </Box>
+                }
+                title={item.name}
+                subheader={item.data}
               />
-            }
-            action={
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 0.5,
-                  mt: "16px",
-                  mr: { xs: "2px", sm: "10px" },
-                }}
-              >
-                <Typography fontWeight={500}>4.5</Typography>
-
-                <Rating value={1} readOnly max={1} size="small" />
-              </Box>
-            }
-            title="Shrimp and Chorizo Paella"
-            subheader="September 14, 2016"
-          />
-          <CardContent>
-            <Typography
-              sx={{ fontFamily: "poppins", fontSize: "14px", color: "#525252" }}
-            >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s,
-            </Typography>
-          </CardContent>
-        </Card>
-        <Card
+              <CardContent>
+                <Typography
+                  sx={{
+                    fontFamily: "poppins",
+                    fontSize: "14px",
+                    color: "#525252",
+                  }}
+                >
+                  {item.description}
+                </Typography>
+              </CardContent>
+            </Card>
+          );
+        })}
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          width: "90%",
+          margin: "auto",
+          justifyContent: "space-between",
+          alignItems: "center",
+          flexDirection: { xs: "column", sm: "row" },
+          gap: 3,
+        }}
+      >
+        {/* DOTS */}
+        <Box
           sx={{
-            width: { xs: "90%", md: "28%" },
-            ml: { xs: "20px" },
-            borderRadius: "10px",
+            display: "flex",
+            gap: 1,
+            alignItems: "center",
           }}
         >
-          <CardHeader
-            avatar={<Avatar src={image1} sx={{ width: 56, height: 56 }} />}
-            action={
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 0.5,
-                  mt: "16px",
-                  mr: { xs: "2px", sm: "10px" },
-                }}
-              >
-                <Typography fontWeight={500}>4.5</Typography>
-
-                <Rating value={1} readOnly max={1} size="small" />
-              </Box>
-            }
-            title="Muhammad Suliman"
-            subheader="September 14, 2016"
+          <Box
+            sx={{
+              width: 40,
+              height: 12,
+              borderRadius: "20px",
+              bgcolor: "#E87D0E",
+            }}
           />
-          <CardContent>
-            <Typography
-              sx={{ fontFamily: "poppins", fontSize: "14px", color: "#525252" }}
-            >
-              Lorem Ipsum is simply dummy text of the printing and{" "}
-            </Typography>
-          </CardContent>
-        </Card>
-        <Card
-          sx={{
-            width: { xs: "90%", md: "28%" },
-            ml: { xs: "20px" },
-            borderRadius: "10px",
-          }}
-        >
-          <CardHeader
-            avatar={
-              <Avatar
-              src={image3}
-                sx={{ width: 56, height: 56, bgcolor: "red[500] " }}
-                aria-label="recipe"
-              />
-            }
-            action={
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 0.5,
-                  mt: "16px",
-                  mr: { xs: "2px", sm: "10px" },
-                }}
-              >
-                <Typography fontWeight={500}>4.5</Typography>
 
-                <Rating value={1} readOnly max={1} size="small" />
-              </Box>
-            }
-            title="Shakir Ullah"
-            subheader="September 14, 1996"
-          />
-          <CardContent>
-            <Typography
-              sx={{ fontFamily: "poppins", fontSize: "14px", color: "#525252" }}
-            >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </Typography>
-          </CardContent>
-        </Card>
+          {[1, 2, 3].map((item) => (
+            <Box
+              key={item}
+              sx={{
+                width: " 12px",
+                height: "12px",
+                borderRadius: "50%",
+                bgcolor: "#828384",
+              }}
+            />
+          ))}
+        </Box>
+
+        {/* BUTTONS */}
+        <Box sx={{ display: "flex", gap: 2 }}>
+          <IconButton
+            sx={{
+              border: "2px solid #E87D0E",
+              color: "#E87D0E",
+              width: 50,
+              height: 50,
+            }}
+          >
+            <ArrowBackIcon />
+          </IconButton>
+
+          <IconButton
+            sx={{
+              bgcolor: "#E87D0E",
+              color: "#fff",
+              width: 50,
+              height: 50,
+              "&:hover": {
+                bgcolor: "#cf6f0c",
+              },
+            }}
+          >
+            <ArrowForwardIcon />
+          </IconButton>
+        </Box>
       </Box>
 
     </Box>
