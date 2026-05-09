@@ -206,7 +206,6 @@ export default function Testimonial() {
           </IconButton>
         </Box>
       </Box>
-
     </Box>
   );
 }
