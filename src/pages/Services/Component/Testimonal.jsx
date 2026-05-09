@@ -19,7 +19,7 @@ import image3 from '../../../../public/Suliman.png'
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 const cardData = [
   {
-    name: "Viezh Robert",
+    name: "Muhammad Suliman",
     data: Date.now(),
     rating: "4.5",
     avatar: image1,
@@ -27,15 +27,15 @@ const cardData = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
   },
   {
-    name: "Viezh Robert",
+    name: "Shakir Ullah",
     data: Date.now(),
-    rating: "4.5",
+    rating: "4.0",
     avatar: image2,
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
   },
   {
-    name: "Viezh Robert",
+    name: "Muhammad Suliman",
     data: Date.now(),
     rating: "4.5",
     avatar: image3,
