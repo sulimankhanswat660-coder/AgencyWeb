@@ -13,6 +13,7 @@ import {
 import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import image1 from '../../../../public/swat.jpeg'
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 const cardData = [
   {
@@ -27,7 +28,7 @@ const cardData = [
     name: "Viezh Robert",
     data: Date.now(),
     rating: "4.5",
-    avatar: {image1},
+    avatar: image1,
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
   },
