@@ -22,7 +22,6 @@ const navItems = [
   { name: "Services", path: "/services" },
   { name: "News", path: "/news" },
   { name: "Contact us", path: "/contact" },
-  { name: "News", path: "/news" },
 ];
 
 function DrawerAppBar(props) {
