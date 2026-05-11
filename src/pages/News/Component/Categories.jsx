@@ -95,6 +95,7 @@ function Categories() {
               width: { xs: "101px", md: "175px" },
               height: { xs: "91px", md: "163px" },
               borderRadius: "20px",
+              objectFit:'cover'
               
             }}
           />
