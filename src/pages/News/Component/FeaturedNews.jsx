@@ -2,6 +2,7 @@ import { Box } from '@mui/material'
 import React from 'react'
 import NewsCard from './Categories'
 import Categories from './Categories'
+import NewsCard from './NewsCard'
 function FeaturedNews() {
   return (
     <Box sx={{width:'100%',height:'max-content',}}>
