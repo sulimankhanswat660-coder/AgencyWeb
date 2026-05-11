@@ -99,7 +99,7 @@ function NewsCard() {
         component="img"
         src={image2}
         sx={{
-        //   width: { xs: "100%" },
+          width: { xs: "100%" },
           height:  "280px" ,
           borderRadius: "20px",
           mt: "50px",
