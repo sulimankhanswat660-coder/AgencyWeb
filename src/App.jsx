@@ -5,7 +5,7 @@ import About from "./pages/AboutUs/About";
 import Service from "./pages/Services/Service";
 import { Box, Container } from "@mui/material";
 import News from "./pages/News/News";
-import Contact from "./pages/Contact Us/Contact";
+import ContactUs  from "./pages/Contact Us/ContactUs";
 function App() {
   return (
     <Container maxWidth={"xl"} disableGutters>
@@ -15,7 +15,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Service/>}/>
           <Route path="/news" element={<News/>}/>
-          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/contact" element={<ContactUs/>}/>
         </Routes>
       </BrowserRouter>
      </Container>
