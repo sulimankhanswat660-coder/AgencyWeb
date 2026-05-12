@@ -44,10 +44,10 @@ function NewsHero() {
               justifyContent: "center",
             }}
           >
-            <Link color="inherit" href="/" underline="none">
+            <Link color="#848484" href="/" underline="none">
               Home
             </Link>
-            <Link underline="none" color="inherit" href="/services">
+            <Link underline="none" color="#DF7C14" href="/services">
               Services
             </Link>
           </Breadcrumbs>
