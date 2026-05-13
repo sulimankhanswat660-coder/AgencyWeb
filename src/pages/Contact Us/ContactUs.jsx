@@ -7,8 +7,6 @@ import ContactForm from './Component/ContactForm';
 
 import Contact from '../../Component/Reuseable/Contact'
 import Footer from "../../Component/Footer/Footer";
-import ContactForm from './Component/ContactForm';
-import FooterTop from './Component/FooterTop';
 
 function ContactUs() {
   return (

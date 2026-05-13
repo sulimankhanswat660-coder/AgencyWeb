@@ -30,7 +30,6 @@ const FooterTop = () => {
         justifyContent="space-between"
         spacing={{ xs: 4, md: 2 }}
       >
-        {/* Follow Us */}
         <Stack spacing={2} sx={{ width: "100%" }}>
           <Typography
             sx={{
@@ -64,7 +63,6 @@ const FooterTop = () => {
           </Stack>
         </Stack>
 
-        {/* Divider */}
         <Divider
           orientation="vertical"
           flexItem
@@ -75,7 +73,6 @@ const FooterTop = () => {
           }}
         />
 
-        {/* Phone */}
         <Stack
           direction="row"
           spacing={2}
@@ -94,7 +91,6 @@ const FooterTop = () => {
           </Typography>
         </Stack>
 
-        {/* Divider */}
         <Divider
           orientation="vertical"
           flexItem
@@ -105,7 +101,6 @@ const FooterTop = () => {
           }}
         />
 
-        {/* Address */}
         <Stack
           direction="row"
           spacing={2}
