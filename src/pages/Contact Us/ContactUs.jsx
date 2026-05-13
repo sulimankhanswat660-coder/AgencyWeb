@@ -1,7 +1,9 @@
 import React from 'react'
 import Navbar from "../../Component/Navbar/Navbar";
 import ContactHero from './Component/ContactHero';
-import ContactPage from './Component/ContactPage';
+import FooterTop from './Component/FooterTop';
+
+import ContactForm from './Component/ContactForm';
 
 import Contact from '../../Component/Reuseable/Contact'
 import Footer from "../../Component/Footer/Footer";
@@ -14,7 +16,6 @@ function ContactUs() {
         <Navbar/>
         <ContactHero/>
         <FooterTop/>
-        <ContactPage/>
         <ContactForm/>
         <Contact/>
         <Footer/>
