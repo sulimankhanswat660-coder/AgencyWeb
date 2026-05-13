@@ -15,6 +15,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { Link, NavLink } from "react-router-dom";
+import { Container } from "@mui/material";
 const drawerWidth = 200;
 const navItems = [
   { name: "Home", path: "/" },
@@ -57,63 +58,65 @@ function DrawerAppBar(props) {
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar component="nav" sx={{ bgcolor: "#DF7C14" }}>
-        <Toolbar>
-          <Typography
-            variant="h6"
-            component="div"
-            fontWeight="bold"
-            sx={{ flexGrow: 1 }}
-          >
-            LOGO
-          </Typography>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerToggle}
-            sx={{
-              ml: "auto",
-              display: { xs: "block", md: "none" },
-            }}
-          >
-            <MenuIcon />
-          </IconButton>
+        <Container maxWidt={'xl'} >
+          <Toolbar>
+            <Typography
+              variant="h6"
+              component="div"
+              fontWeight="bold"
+              sx={{ flexGrow: 1 }}
+            >
+              LOGO
+            </Typography>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              onClick={handleDrawerToggle}
+              sx={{
+                ml: "auto",
+                display: { xs: "block", md: "none" },
+              }}
+            >
+              <MenuIcon />
+            </IconButton>
 
-          <Box sx={{ display: { xs: "none", md: "block" } }}>
-            {navItems.map((item, i) => (
-              <Box
-                mr={4}
-                key={i}
-                component={NavLink}
-                to={item.path}
-                sx={{
-                  position: "relative",
-                  textDecoration: "none",
-                  color: "white",
+            <Box sx={{ display: { xs: "none", md: "block" } }}>
+              {navItems.map((item, i) => (
+                <Box
+                  mr={4}
+                  key={i}
+                  component={NavLink}
+                  to={item.path}
+                  sx={{
+                    position: "relative",
+                    textDecoration: "none",
+                    color: "white",
 
-                  "&::before": {
-                    content: '""',
-                    width: "6px",
-                    height: "6px",
-                    borderRadius: "50%",
-                    backgroundColor: "white",
-                    position: "absolute",
-                    left: "-15px",
-                    top: "50%",
-                    transform: "translateY(-50%)",
-                    opacity: 0,
-                    transition: "0.3s",
-                  },
+                    "&::before": {
+                      content: '""',
+                      width: "6px",
+                      height: "6px",
+                      borderRadius: "50%",
+                      backgroundColor: "white",
+                      position: "absolute",
+                      left: "-15px",
+                      top: "50%",
+                      transform: "translateY(-50%)",
+                      opacity: 0,
+                      transition: "0.3s",
+                    },
 
-                  "&.active::before": {
-                    opacity: 1,
-                  },
-                }}
-              >
-                {item.name}
-              </Box>
-            ))}
-          </Box>
-        </Toolbar>
+                    "&.active::before": {
+                      opacity: 1,
+                    },
+                  }}
+                >
+                  {item.name}
+                </Box>
+              ))}
+            </Box>
+          </Toolbar>
+        </Container>
       </AppBar>
       <nav>
         <Drawer
