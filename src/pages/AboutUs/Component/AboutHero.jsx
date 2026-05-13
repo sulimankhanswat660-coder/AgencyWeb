@@ -40,7 +40,7 @@ function AboutHero() {
             <Link
               underline="none"
               color="#DF7C14"
-              href="/material-ui/getting-started/installation/"
+              href="/about"
             >
               About us
             </Link>
