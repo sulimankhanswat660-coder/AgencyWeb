@@ -30,17 +30,16 @@ function AboutHero() {
           sx={{
             py:{xs:'20px'},
             width: { xs: "90%", md: "80%" },
-            // height: { xs: "400px" },
             margin:'auto'
           }}
         >
           <Breadcrumbs separator="›" aria-label="breadcrumb">
-            <Link color="inherit" href="/" underline="none">
+            <Link color="#848484" href="/" underline="none">
               Home
             </Link>
             <Link
               underline="none"
-              color="inherit"
+              color="#DF7C14"
               href="/material-ui/getting-started/installation/"
             >
               About us
